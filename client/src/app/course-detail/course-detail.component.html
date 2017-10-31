@@ -1,0 +1,17 @@
+<h2>{{courseDetail?.description}}</h2>
+
+<div class='lessons-list-container'>
+
+    <table class='table lessons-list card card-strong'>
+        <tbody>
+        <tr *ngFor='let lesson of courseDetail?.lessons '>
+            <td class='lesson-title'>{{lesson.description}}</td>
+            <td>
+                <i class='material-icons'>history</i>
+                <span>{{lesson.duration}}</span>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+
+</div>

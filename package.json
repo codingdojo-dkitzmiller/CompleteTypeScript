@@ -1,0 +1,37 @@
+{
+  "name": "completetypescriptfoo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "es6": "./node_modules/.bin/http-server -c1 .",
+    "types-example": "node ./example/learningTypes.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "./node_modules/.bin/ts-node ./server/server.ts",
+    "watch": "./node_modules/.bin/nodemon -w . --ext '.ts'  --exec 'npm run start' ",
+    "oop": "./node_modules/.bin/ts-node ./example/oop.ts"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@angular/cli": "^1.4.9",
+    "@types/bluebird": "^3.5.17",
+    "@types/express": "^4.0.39",
+    "@types/lodash": "^4.14.80",
+    "@types/node": "^8.0.47",
+    "@types/sequelize": "^4.0.78",
+    "http-server": "^0.10.0",
+    "nodemon": "^1.12.1",
+    "ts-node": "^3.3.0",
+    "typescript": "^2.5.3"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "human-readable-ids": "^1.0.3",
+    "lodash": "^4.17.4",
+    "pg": "^7.3.0",
+    "sequelize": "^4.19.0",
+    "systemjs": "^0.20.19"
+  }
+}
